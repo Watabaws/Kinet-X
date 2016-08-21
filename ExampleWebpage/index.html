@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: #333;
+            }
+            ul.navbar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            
+            .name {
+                color:aqua;
+                font-size: 64px;
+                float: center;
+                padding-bottom: 80px;
+                padding-left: 80px;
+                padding-top: 90px;
+                margin-top: 30px;
+                letter-spacing: 5px;
+                font-family: "Century Gothic";
+                background: white;
+                border-radius: 300px;
+                width: 99%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            ul.top {
+                float: left;
+                text-align: center;
+                font-size: 2.3em;
+            }
+            .clearfix {
+                clear:both;
+            }
+
+            li.bar {
+                float: right;
+                border-radius: 25px;
+                background: brown;
+            }
+            
+            li.desc {
+                list-style-type: none;
+                float:center;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            a:hover:not(.active) {
+                background-color: #111;
+                border-radius: 25px;
+            }
+            
+            img.me {
+                border-radius: 600px;
+                height: 300px;
+                
+            }
+            .atr {
+                color: white;
+                padding-top: 20px;
+                padding-left: 40px;
+                float: center;
+                font-family: Helvetica;
+                font-size: 40px;
+                text-align: left;
+            }
+            .dsc {
+                float:right;
+                color: whitesmoke;
+                padding-right: 20px;
+                margin-left: 600px;
+                margin-top: -50px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                font-family: Helvetica;
+            }
+            
+            
+
+            .active {
+                background-color:#4CAF50;
+            }
+        </style>
+        <link rel="stylesheet" href="css/pills.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>  
+        <!-- <div class="row">
+            <ul class="navbar">
+                <li class="bar"> <a href="">ABOUT ME</a></li>
+                <li class="bar"> <a href="">HOME</a></li>
+
+            </ul>
+        </div>-->
+        <br> <br> <br>
+        <div class="row" style="background:orange;">    
+            <br>
+            <div class="row">
+                <div class="column one-third" style="float:left;">
+                    <img class="me" src="images/me.jpg">    
+                </div>
+                <div class="column two-thirds"> <div class="name">Adam Abbas</div></div>
+            </div>  
+            <br> <br>
+            <div class="row">
+                <div class="column two-fourths offset by-one-fourths" style="background: black; border: 25px solid orange; "> 
+                    <div class="atr">  
+                        Engineer
+                    </div>
+                        <div class="dsc"> 
+                            Ever since I was little, I loved taking things apart and seeing how they worked. From pens to clocks - nothing was safe.
+                            Now, I love working with robots, mechanisms and circuits to make amazing things, and learn how the world works.
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column two-fourths offset by-one-fourths" style="background: black; border: 25px solid orange; "> 
+                    <div class="atr">  
+                        Programmer
+                    </div>
+                        <div class="dsc"> 
+                            I started coding in 7th grade; with basic Python, HTML and CSS. Since then I've expanded my knowledge in each of those, as well as learned new languages- such as Javascript and Propeller-C. My favorite form of programming is robotic, working with sensors and actuators.
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column two-fourths offset by-one-fourths" style="background: black; border: 25px solid orange; "> 
+                    <div class="atr">  
+                        Engineer
+                    </div>
+                        <div class="dsc"> 
+                            Ever since I was little, I loved taking things apart and seeing how they worked. From pens to clocks - nothing was safe.
+                            Now, I love working with robots, mechanisms and circuits to make amazing things.
+                        </div>
+                </div>
+            </div>  
+        </div>
+        <br> <br>
+        
+    </body>
+</html>
