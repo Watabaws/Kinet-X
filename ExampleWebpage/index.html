@@ -3,52 +3,55 @@
     <head>
         <style>
             body {
-                background: #333;
+                background: #D7D6D6;
             }
             ul.navbar {
                 list-style-type: none;
+                height: auto;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: #333;
+                background-color: #3C343F;
+                border-radius: 15px;
+                font-family: "Alegreya Sans", sans-serif;
             }
-            
+            .footer{
+                background-color: #3C343F;
+                border-radius: 15px;
+            }
+            .ftt{
+                color: #BEB2C8; 
+                padding: 5px;
+                font-family: "Alegreya Sans", sans-serif;
+                font-size: 28px;
+            } 
             .name {
-                color: cornflowerblue;
-                font-size: 64px;
-                float: center;
-                padding-bottom: 80px;
-                padding-top: 90px;
-                margin-top: 30px;
-                letter-spacing: 5px;
-                font-family: "Century Gothic";
-                background: white;
-                border-radius: 300px;
-                width: 99%;
-                margin-bottom: 20px;
+                color: #5D5E60;
+                font-size: 55px;
+                padding: 10px;
+                letter-spacing: 10px;
+                font-family: 'Poiret One', cursive;
                 text-align: center;
+                position:relative;
+                float:center;
+                width:100%;
+
             }
-            
             ul.top {
                 float: left;
                 text-align: center;
-                font-size: 2.3em;
             }
-            .clearfix {
-                clear:both;
-            }
-
             li.bar {
-                float: right;
-                border-radius: 25px;
-                background: brown;
+                float: left;
+                margin-right: 10px; 
+                padding: 10px;
+                font-size: 200%;
+                font-family: monospace
             }
-            
             li.desc {
                 list-style-type: none;
                 float:center;
             }
-
             li a {
                 display: block;
                 color: white;
@@ -56,98 +59,152 @@
                 padding: 14px 16px;
                 text-decoration: none;
             }
-
-            a:hover:not(.active) {
+            a.nb:hover {
                 background-color: #111;
-                border-radius: 25px;
+                border-radius: 10px;
             }
-            
-            img.me {
-                border-radius: 600px;
-                height: 300px;
+            .me {
+                border-radius: 500px;
+                float:center;
+                position:relative;
+                left: 50%;
+                transform: translateX(-50%);
                 
             }
             .atr {
                 color: white;
-                padding-top: 20px;
-                padding-left: 40px;
                 float: center;
                 font-family: Helvetica;
                 font-size: 40px;
-                text-align: left;
+                text-align: center;
+                font-family: fantasy;
             }
             .dsc {
-                float:right;
+                text-align:left;
                 color: whitesmoke;
-                padding-right: 20px;
-                margin-left: 600px;
-                margin-top: -50px;
-                margin-bottom: 20px;
+                font-family: serif;
+                
                 font-size: 20px;
                 font-family: Helvetica;
+            }   
+            .title {
+                text-align: center;
+                font-size: 4em;
+                color: mediumpurple;
+                font-family: cursive;
             }
-            
-            
+            .list {
+                color:white;
+                align-items: 
+            }
+            .ttl {
+                font-family: 'Cambay', sans-serif;
+                float:center;
+                text-align: center;
+                border-radius: 250px;
+                font-size: 3.2em;
+                padding: 10%;
+                top:50%;
+                position:relative;
+                transform: translateY(5%);
+                
+            }
+            .decr {
+                font-family: 'Coda';
+                float:center;
+                text-align: center;
+                position: relative;
+                border-radius:250px;
+                font-size: 1em;
+                padding: 5%
+                
+            }
+            a {
+                color: orange;
+            }
+            a.lnk:hover {
+                color:black;
+            }
+            ul {
+                list-style-type: none;
+                
+            }
+            i {
+                padding-right: 10px;
+            }
+            .Titl{
+                color:#BEB2C8;
+                font-family: "Alegreya Sans", sans-serif;
+                font-size: 38px;
 
-            .active {
-                background-color:#4CAF50;
             }
         </style>
         <link rel="stylesheet" href="css/pills.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Cambay|Coda|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>  
-        <!-- <div class="row">
+        <div class="row">
             <ul class="navbar">
-                <li class="bar"> <a href="">ABOUT ME</a></li>
-                <li class="bar"> <a href="">HOME</a></li>
+                <li class="bar"> <a class="nb" href="">HOME</a></li>
+                <li class="bar"> <a class="nb" href="">ABOUT ME</a></li>
+                <li class="bar"> <a class="nb" href="">PROJECTS</a></li>
 
             </ul>
-        </div>-->
-        <br> <br> <br>
-        <div class="row" style="background:orange;">    
+        </div>
+        <div class="row" style="background:#f0f0f0;border-radius:15px;">    
             <br>
             <div class="row">
-                <div class="column one-third" style="float:left;">
+                <div class="column half offset by-one-quarter">
                     <img class="me" src="images/me.jpg">    
                 </div>
-                <div class="column two-thirds"> <div class="name">Adam Abbas</div></div>
-            </div>  
-            <br> <br>
-            <div class="row">
-                <div class="column two-fourths offset by-one-fourths" style="background: black; border: 40px solid orange; "> 
-                    <div class="atr">  
-                        Engineer
-                    </div>
-                        <div class="dsc"> 
-                            Ever since I was little, I loved taking things apart and seeing how they worked. From pens to clocks - nothing was safe.
-                            Now, I love working with robots, mechanisms and circuits to make amazing things, and learn how the world works.
-                        </div>
-                </div>
             </div>
             <div class="row">
-                <div class="column two-fourths offset by-one-fourths" style="background: black; border: 25px solid orange; "> 
-                    <div class="atr">  
-                        Programmer
-                    </div>
-                        <div class="dsc"> 
-                            I started coding in 7th grade; with basic Python, HTML and CSS. Since then I've expanded my knowledge in each of those, as well as learned new languages- such as Javascript and Propeller-C. My favorite form of programming is robotic, working with sensors and actuators.
-                        </div>
-                </div>
+                <div class="column whole"> <div class="name">Hi I'm Adam! <br>  Welcome to my site</div></div>
+            </div> 
+        <br> 
+        <div class="row"> <hr width=70% size=5px noshade=noshade color=#A9A9A9> </div>
+        <br><br>
+        <div class="row" style="overflow:hidden;">
+            <div class="column one-third" style="padding-bottom:1000px; margin-bottom:-1000px;">
+                <div class="ttl" style="background:#BEB2C8;">Who am I?</div>
             </div>
-            <div class="row">
-                <div class="column two-fourths offset by-one-fourths" style="background: black; border: 25px solid orange; "> 
-                    <div class="atr">  
-                        Engineer
-                    </div>
-                        <div class="dsc"> 
-                            Ever since I was little, I loved taking things apart and seeing how they worked. From pens to clocks - nothing was safe.
-                            Now, I love working with robots, mechanisms and circuits to make amazing things.
-                        </div>
-                </div>
-            </div>  
+            <div class="column two-thirds" style="padding-bottom:1000px; margin-bottom:-1000px;">
+                <div class="decr" style="background:#D7D6D6;">I'm an aspiring engineer, programmar and innovator. I'm the Co-Founder of Kinet-X, a tech education startup aiming to provide the future generation with the tools they need to change the world. I'm a proud member of my robotics team, an active participant in my student government and a member of the Young Hackers. If you're interested in learning more about me, feel free to look at my <a class="lnk" href="AboutMe.html">About Me</a> section!</div>
+            </div>
         </div>
-        <br> <br>
-        
+            <br>
+        <div class="row" style="overflow:hidden";>
+            <div class="column one-third" style="padding-bottom:1000px; margin-bottom:-1000px;">
+                <div class="ttl" style="background:#D7D6D6;">What do I do?</div>
+            </div>
+            <div class="column two-thirds" style="padding-bottom:1000px; margin-bottom:-1000px;">
+                <div class="decr" style="background:#BEB2C8">I have years of experience programming, being fluent in HTML, CSS, Python, Propeller-C and Arduino- with a basic understanding of Javascript. I've built websites (including this one!), programmed robots and sensors, and built games and applications. In addition, I have experience with soldering and circuitry- being able to buid things from solar powered cars to light up shoes. Check out my <a class="lnk" href="projects.html">Projects</a>!  </div>
+            </div>
+        </div> 
+        <br><br>
+        </div>
+        <div class="row">
+            <div class="column whole footer">
+                <center ><span class="Titl">Contact Me</span></center>
+                <div class="column half">
+                    <div class="ftt">
+                        <ul>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>adamabbas362@gmail.com</li>
+                            <br>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> 917-543-2627</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column half">
+                    <div class="ftt">
+                        <ul>
+                            <li><li><i class="fa fa-envelope-o" aria-hidden="true"></i>adam@kinet-x.org</li> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
